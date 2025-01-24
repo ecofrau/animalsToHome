@@ -1,0 +1,38 @@
+test@MBP-Usertest ~ % mkdir /home/animals
+mkdir: /home/animals: Operation not supported
+test@MBP-Usertest ~ % mkdir ~/animals
+test@MBP-Usertest ~ % mkdir ~/animals/dogs
+mkdir ~/animals/cats
+mkdir ~/animals/fish
+test@MBP-Usertest ~ % mkdir ~/animals/dogs
+mkdir ~/animals/cats
+mkdir ~/animals/fish
+mkdir: /Users/test/animals/dogs: File exists
+mkdir: /Users/test/animals/cats: File exists
+mkdir: /Users/test/animals/fish: File exists
+test@MBP-Usertest ~ % touch ~/animals/dogs/pluto
+touch ~/animals/cats/garfield
+touch ~/animals/fish/nemo
+test@MBP-Usertest ~ % touch ~/animals/dogs/pluto
+touch ~/animals/cats/garfield
+touch ~/animals/fish/nemo
+test@MBP-Usertest ~ % mkdir ~/planets
+test@MBP-Usertest ~ % sudo touch /opt/Mercury
+sudo touch /opt/Venus
+sudo touch /opt/Mars
+sudo touch /opt/Jupiter
+Password:
+test@MBP-Usertest ~ % sudo mv /opt/Mercury ~/planets/
+sudo mv /opt/Venus ~/planets/
+sudo mv /opt/Mars ~/planets/
+sudo mv /opt/Jupiter ~/planets/ 
+test@MBP-Usertest ~ % touch /tmp/adam
+test@MBP-Usertest ~ % mkdir ~/humans
+cp /tmp/adam ~/humans/
+test@MBP-Usertest ~ % touch /tmp/evA
+test@MBP-Usertest ~ % sudo mv /tmp/evA /opt/eve
+Password:
+test@MBP-Usertest ~ % sudo mv /opt/eve ~/humans/
+test@MBP-Usertest ~ % ls ~/humans
+adam	eve
+test@MBP-Usertest ~ % 
